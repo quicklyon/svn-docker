@@ -20,7 +20,7 @@
 
 [Apache® Subversion®](https://subversion.apache.org/)  Subversion 是一个开源版本控制系统。 Subversion 项目和软件由 CollabNet, Inc. 于 2000 年创立，在过去十年中取得了令人难以置信的成功。 Subversion 已经并将继续在开源领域和企业界得到广泛采用。
 
-![screenshots](https://github.com/quicklyon/svn-docker/blob/quickon/.template/svn_screenshots.png)
+![screenshots](https://raw.githubusercontent.com/quicklyon/svn-docker/quickon/.template/svn_screenshots.png)
 
 <!-- 这里写应用的【附加信息】 -->
 
@@ -52,7 +52,7 @@ SVN应用，基于 **Alpine Linux** 系统和 S6 进程管理服务组成 (了�
 通过如下命令运行镜像：
 
 ```
-docker run  -d --name svn-server 、
+docker run  -d --name svn-server \
             -p 80:80 \
             -p 3690:3690 \
             -v <宿主机目录>:/data \

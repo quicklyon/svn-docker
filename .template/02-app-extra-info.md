@@ -28,7 +28,7 @@ SVN应用，基于 **Alpine Linux** 系统和 S6 进程管理服务组成 (了�
 通过如下命令运行镜像：
 
 ```
-docker run  -d --name svn-server 、
+docker run  -d --name svn-server \
             -p 80:80 \
             -p 3690:3690 \
             -v <宿主机目录>:/data \
