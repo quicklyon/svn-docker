@@ -1,5 +1,5 @@
 #!/usr/bin/with-contenv sh
-
+# shellcheck shell=bash
 # From https://github.com/smebberson/docker-alpine/tree/master/alpine-apache
 
-exec /usr/bin/svnserve -d --foreground -r /home/svn --listen-port 3690;
+exec /usr/bin/svnserve -d --foreground -r /data/svn --listen-port 3690;

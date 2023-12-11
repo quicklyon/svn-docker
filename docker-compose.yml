@@ -1,0 +1,17 @@
+version: "3"
+services:
+  2fauth:
+    image: hub.zentao.com/app/svn-server:${TAG}
+    container_name: svn-server
+    volumes:
+      - 'svn-server:/data'
+    ports:
+      - 8000:80/tcp
+    environment:
+      - ADMIN_USER=admin
+      - ADMIN_PASSWORD=just4Test
+
+# persistence for mysql and zentao
+volumes:
+  svn-server:
+    driver: local

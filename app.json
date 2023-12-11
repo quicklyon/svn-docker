@@ -1,0 +1,12 @@
+{
+    "Name": "svn-server",
+    "Home": "https://subversion.apache.org/",
+    "GitUrl": "https://subversion.apache.org/",
+    "DockerfileUrl": "https://github.com/quicklyon/svn-docker",
+    "InstallDocUrl": "https://www.qucheng.com/app-install/install-svn-server.html",
+    "Docker": {
+        "Name": "svn-server",
+        "Repo": "https://hub.docker.com/r/easysoft/svn-server",
+        "TagUrl": "https://hub.docker.com/r/easysoft/svn-server/tags/"
+    }
+}

@@ -1,0 +1,4 @@
+#!/usr/bin/with-contenv sh
+# shellcheck shell=bash
+
+mkdir -p "$(dirname "$GO_DNSMASQ_LOG_FILE")"
