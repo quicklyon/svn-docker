@@ -20,7 +20,7 @@
 
 [Apache® Subversion®](https://subversion.apache.org/)  Subversion 是一个开源版本控制系统。 Subversion 项目和软件由 CollabNet, Inc. 于 2000 年创立，在过去十年中取得了令人难以置信的成功。 Subversion 已经并将继续在开源领域和企业界得到广泛采用。
 
-![screenshots](https://raw.githubusercontent.com/quicklyon/2FAuth-docker/main/.template/svn_screenshots.png)
+![screenshots](https://raw.githubusercontent.com/quicklyon/svn-server/main/.template/svn_screenshots.png)
 
 svn-server官网：[https://subversion.apache.org/](https://subversion.apache.org/)
 
@@ -69,8 +69,7 @@ docker run  -d --name svn-server 、
 由于版本比较多,这里只列出最新的5个版本,更详细的版本列表请参考:[可用版本列表](https://hub.docker.com/r/easysoft/svn-server/tags/)
 
 <!-- 这里是镜像的【Tag】信息，通过命令维护，详情参考：https://github.com/quicklyon/template-toolkit -->
-- [latest](https://subversion.apache.org/docs/release-notes/1.14.html)
-- [1.14](https://subversion.apache.org/docs/release-notes/1.14.html)
+- [latest , 1.41.2](https://subversion.apache.org/docs/release-notes/1.14.html)
 
 ## 三、获取镜像
 
