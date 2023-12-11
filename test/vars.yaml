@@ -1,0 +1,42 @@
+binaries:
+  - httpd
+  - render-template
+  - svn
+  - svnadmin
+  - php
+
+directories:
+  - mode: "0755"
+    owner: apache
+    group: apache
+    paths:
+      - /data/svn
+      - /data/svnadmin
+      - /data/config
+files:
+  - mode: "0644"
+    owner: apache
+    group: apache
+    paths:
+      - /etc/apache2/conf.d/dav_svn.conf
+      - /etc/apache2/httpd.conf
+      - /data/config/passwd
+      - /data/config/subversion-access-control
+
+modules:
+  enabled:
+    - date
+    - filter
+    - hash
+    - json
+    - ldap
+    - libxml
+    - pcre
+    - phpdbg_webhelper
+    - readline
+    - Reflection
+    - session
+    - SPL
+    - standard
+    - xml
+    - zlib

@@ -1,0 +1,36 @@
+# Copyright ZenTao, Inc.
+# SPDX-License-Identifier: APACHE-2.0
+
+command:
+  # Check explicitly enabled and disabled modules
+  check-apache-loaded-modules:
+    exec: httpd -M
+    exit-status: 0
+    stdout:
+      - "php7_module"
+      - "mpm_prefork_module"
+      - "!mpm_event_module"
+
+  check-php-config-include:
+    exec: php --ini
+    exit-status: 0
+    stdout:
+      - "/etc/php7/php.ini"
+      - "/etc/php7/conf.d"
+  
+  check-php-internal-exts:
+    exec: php -m
+    exit-status: 0
+    stdout:
+    {{ range $module := .Vars.modules.enabled }}
+      - /{{ $module }}.*/
+    {{ end }}
+
+http:
+  http://localhost:
+    allow-insecure: true
+    no-follow-redirects: false
+    status: 200
+    timeout: 30000
+    body:
+      - /.*You must login to get access to the application.*/

@@ -36,7 +36,7 @@ RUN curl -sLk ${RT_URL}/v${RT_VER}/render-template-linux-amd64.tar.gz | tar xfz 
 RUN sed -i -e 's/^root::/root:!:/' /etc/shadow
 
 # Add services configurations
-COPY rootfs /
+COPY --chown=apache:apache rootfs /
 
 # Set HOME in non /root folder
 ENV HOME /data

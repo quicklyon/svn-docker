@@ -1,0 +1,8 @@
+# Copyright ZenTao, Inc.
+# SPDX-License-Identifier: APACHE-2.0
+
+command:
+  # check admin user info in passwd file
+  check-admin-user:
+    exec: grep -c "$ADMIN_USER" /data/config/passwd
+    exit-status: 0

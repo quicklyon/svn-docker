@@ -1,0 +1,41 @@
+# https://taskfile.dev
+
+version: '3'
+
+env:
+  APP_NAME: svn-server
+  APP_VER:
+    sh: cat VERSION
+  GOSS_FILES_PATH: "./test"
+  GOSS_SLEEP: 5
+  GOSS_VARS: "vars.yaml"
+
+tasks:
+  default:
+    desc: 默认列出所有的任务
+    cmds:
+      - task --list-all
+
+  build:
+    desc: 内部构建
+    cmds:
+      - docker buildx build -t hub.qc.oop.cc/app/$APP_NAME:$APP_VER
+                            -t hub.qc.oop.cc/app/$APP_NAME
+                            . --pull --push
+
+  pub-build:
+    desc: 公网构建
+    cmds:
+      - docker buildx build -t hub.zentao.net/app/$APP_NAME:$APP_VER
+                            -t hub.zentao.net/app/$APP_NAME
+                            -t easysoft/$APP_NAME:$APP_VER
+                            -t easysoft/$APP_NAME
+                            . --pull --push
+
+  test:
+    desc: 测试镜像
+    cmds:
+      - export GOSS_FILES_PATH
+      - export GOSS_SLEEP
+      - export GOSS_VARS
+      - dgoss run --pull=always -e ADMIN_USER=admin -e ADMIN_PASSWORD=just4Test hub.qc.oop.cc/app/$APP_NAME:$APP_VER
