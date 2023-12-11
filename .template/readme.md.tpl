@@ -18,9 +18,6 @@
 
 {{APP_DESC}}
 
-{{APP_NAME}}官网：[{{APP_HOME}}]({{APP_HOME}})
-
-
 {{APP_EXTRA_INFO}}
 
 ## 二、支持的版本(Tag)

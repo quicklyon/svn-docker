@@ -22,9 +22,6 @@
 
 ![screenshots](https://github.com/quicklyon/svn-docker/blob/quickon/.template/svn_screenshots.png)
 
-svn-server官网：[https://subversion.apache.org/](https://subversion.apache.org/)
-
-
 <!-- 这里写应用的【附加信息】 -->
 
 下面列出的功能是假设您对版本控制是什么以及版本控制系统一般如何工作有基本的了解。如果您正在寻找的某个功能未在此列表中列出，请随时在我们的项目邮件列表中询问 - 也许我们只是没有想到将其列出在这里。如果 Subversion 确实缺少您需要的功能，您的反馈将帮助我们改进 Subversion，同时，也许我们可以通过 Subversion 所具有的功能来帮助您满足您的需求。
