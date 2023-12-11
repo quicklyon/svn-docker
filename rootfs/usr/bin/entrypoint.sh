@@ -4,7 +4,7 @@ set -xe
 
 CONFIG_DIR="/data/config"
 SVN_DIR="/data/svn"
-ADMIN_USER=${ADMIN_USER:-admin}
+ADMIN_USERNAME=${ADMIN_USERNAME:-admin}
 ADMIN_PASSWORD=${ADMIN_PASSWORD:-pass4You}
 
 mkdir -pv $CONFIG_DIR $SVN_DIR 
@@ -13,7 +13,7 @@ chown apache.apache $CONFIG_DIR $SVN_DIR
 # 根据环境变量，初始化管理员用户名和密码
 if [ ! -f /data/config/passwd ];then
     # 初始化管理员用户名和密码
-    htpasswd -c -b /data/config/passwd "$ADMIN_USER" "$ADMIN_PASSWORD"
+    htpasswd -c -b /data/config/passwd "$ADMIN_USERNAME" "$ADMIN_PASSWORD"
 fi
 
 # 初始化 subversion-access-control 文件

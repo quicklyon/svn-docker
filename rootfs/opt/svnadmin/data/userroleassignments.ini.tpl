@@ -1,2 +1,2 @@
-[{{ADMIN_USER}}]
+[{{ADMIN_USERNAME}}]
 Administrator=

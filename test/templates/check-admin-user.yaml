@@ -4,5 +4,5 @@
 command:
   # check admin user info in passwd file
   check-admin-user:
-    exec: grep -c "$ADMIN_USER" /data/config/passwd
+    exec: grep -c "$ADMIN_USERNAME" /data/config/passwd
     exit-status: 0
