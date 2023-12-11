@@ -38,4 +38,4 @@ tasks:
       - export GOSS_FILES_PATH
       - export GOSS_SLEEP
       - export GOSS_VARS
-      - dgoss run --pull=always -e ADMIN_USER=admin -e ADMIN_PASSWORD=just4Test hub.qc.oop.cc/app/$APP_NAME:$APP_VER
+      - dgoss run --pull=always -e ADMIN_USERNAME=test -e ADMIN_PASSWORD=just4Test hub.qc.oop.cc/app/$APP_NAME:$APP_VER
