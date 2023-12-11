@@ -12,7 +12,7 @@
 
 - 通过 [渠成软件百宝箱]({{APP_INSTALL_DOC_URL}}) 一键安装 **{{APP_NAME}}**
 - [Dockerfile 源码]({{APP_DOCKERFILE_GIT_URL}})
- - [{{APP_NAME}} 官网]({{APP_HOME}})
+ - [Apache® Subversion® 官网]({{APP_HOME}})
 
 ## 一、关于 {{APP_NAME}}
 

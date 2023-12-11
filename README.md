@@ -12,7 +12,7 @@
 
 - 通过 [渠成软件百宝箱](https://www.qucheng.com/app-install/install-svn-server.html) 一键安装 **svn-server**
 - [Dockerfile 源码](https://github.com/quicklyon/svn-docker)
- - [svn-server 官网](https://subversion.apache.org/)
+ - [Apache® Subversion® 官网](https://subversion.apache.org/)
 
 ## 一、关于 svn-server
 
