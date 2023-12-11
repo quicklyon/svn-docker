@@ -1,10 +1,10 @@
 {{WARNING}}
 # QuickOn {{APP_NAME}} 应用镜像
 
-![GitHub Workflow Status (event)](https://img.shields.io/github/actions/workflow/status/quicklyon/{{app_name}}-docker/docker.yml?style=flat-square)
+![GitHub Workflow Status (event)](https://img.shields.io/github/actions/workflow/status/quicklyon/svn-docker/docker.yml?style=flat-square)
 ![Docker Pulls](https://img.shields.io/docker/pulls/easysoft/{{app_name}}?style=flat-square)
 ![Docker Image Size](https://img.shields.io/docker/image-size/easysoft/{{app_name}}?style=flat-square)
-![GitHub tag](https://img.shields.io/github/v/tag/quicklyon/{{APP_NAME}}-docker?style=flat-square)
+![GitHub tag](https://img.shields.io/github/v/tag/quicklyon/svn-docker?style=flat-square)
 
 > 申明: 该软件镜像是由QuickOn打包。在发行中提及的各自商标由各自的公司或个人所有，使用它们并不意味着任何从属关系。
 

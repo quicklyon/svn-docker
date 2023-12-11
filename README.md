@@ -1,10 +1,10 @@
 <!-- 该文档是模板生成，手动修改的内容会被覆盖，详情参见：https://github.com/quicklyon/template-toolkit -->
 # QuickOn svn-server 应用镜像
 
-![GitHub Workflow Status (event)](https://img.shields.io/github/actions/workflow/status/quicklyon/svn-server-docker/docker.yml?style=flat-square)
+![GitHub Workflow Status (event)](https://img.shields.io/github/actions/workflow/status/quicklyon/svn-docker/docker.yml?style=flat-square)
 ![Docker Pulls](https://img.shields.io/docker/pulls/easysoft/svn-server?style=flat-square)
 ![Docker Image Size](https://img.shields.io/docker/image-size/easysoft/svn-server?style=flat-square)
-![GitHub tag](https://img.shields.io/github/v/tag/quicklyon/svn-server-docker?style=flat-square)
+![GitHub tag](https://img.shields.io/github/v/tag/quicklyon/svn-docker?style=flat-square)
 
 > 申明: 该软件镜像是由QuickOn打包。在发行中提及的各自商标由各自的公司或个人所有，使用它们并不意味着任何从属关系。
 
