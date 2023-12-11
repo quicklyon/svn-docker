@@ -4,8 +4,8 @@ set -xe
 
 CONFIG_DIR="/data/config"
 SVN_DIR="/data/svn"
-ADMIN_USERNAME=${ADMIN_USERNAME:-admin}
-ADMIN_PASSWORD=${ADMIN_PASSWORD:-pass4You}
+export ADMIN_USERNAME=${ADMIN_USERNAME:-admin}
+export ADMIN_PASSWORD=${ADMIN_PASSWORD:-pass4You}
 
 mkdir -pv $CONFIG_DIR $SVN_DIR 
 chown apache.apache $CONFIG_DIR $SVN_DIR
