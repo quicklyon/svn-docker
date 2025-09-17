@@ -19,7 +19,7 @@ tasks:
   build:
     desc: 内部构建
     cmds:
-      - docker buildx build -t hub.qc.oop.cc/app/$APP_NAME:$APP_VER
+      - docker buildx build --platform linux/amd64,linux/arm64 -t hub.qc.oop.cc/app/$APP_NAME:$APP_VER
                             -t hub.qc.oop.cc/app/$APP_NAME
                             . --pull --push
 
